@@ -9,6 +9,7 @@ Users can search by city name and see temperature, conditions, humidity, pressur
 
 Hosted on Vercel:
 
+**https://101466133-comp3123-labtest2.vercel.app/**
 
 ---
 
@@ -47,24 +48,26 @@ Hosted on Vercel:
 
 ## Getting Started (Local Setup)
 
-1. Clone the repository:
+1. Clone the repository ( or download zip archive) :
 
    ```bash
    git clone https://github.com/YOUR_GITHUB_USERNAME/101466133_comp3123_labtest2.git
    cd 101466133_comp3123_labtest2
    ```
-2. Install dependencies:
+3. Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Configure API key:
+
+4. Configure API key:
 
 * Open `src/config.js`.
 * Set `OPEN_WEATHER_API_KEY` to your OpenWeatherMap API key.
 
-4. Run the app:
+
+5. Run the app:
 
 ```bash
 npm start
@@ -72,14 +75,9 @@ npm start
 
 The app will open at `http://localhost:3000`
 
-
-
 ## Screenshots
 
-
-
-* **Main screen – default city (Toronto)![Main screen](./screenshots/Toronto.jpg)**
-
-
-
-* **Search result – Vancouver![Search Result](./screenshots/vancouver.jpg)**
+* **Main screen ( Localhost ) – default city (Toronto)![Main screen](./screenshots/Toronto.jpg)**
+* **Search result ( Localhost ) – Vancouver![Search Result](./screenshots/vancouver.jpg)**
+* **VercelConfig  ![VercelConfig](./screenshots/VercelConfig.jpg)**
+* **VercelDeployment![VercelDeployment](./screenshots/VercelDeployment.jpg)**
