@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Labtest2 – Weather Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React weather dashboard that shows the **current weather** for any city using the **OpenWeatherMap API**.
+Users can search by city name and see temperature, conditions, humidity, pressure, and wind speed.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+Hosted on Vercel:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Search weather by **city name**
+- Displays:
+  - City and country
+  - Current temperature and "feels like" temperature
+  - Min / Max temperature
+  - Weather condition and description
+  - Humidity, pressure, and wind speed
+  - Weather icon from OpenWeatherMap
+- Modern UI with a card-style layout and background image
+- Built with **React hooks** (`useState`, `useEffect`) and **props** between components
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React** (Create React App)
+- **Axios** for API calls
+- **OpenWeatherMap API** for weather data
+- Hosted on **Vercel**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## API Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **OpenWeatherMap – Current Weather Data**
+  - Endpoint: `https://api.openweathermap.org/data/2.5/weather`
+  - Example:
+    `https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=YOUR_API_KEY&units=metric`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started (Local Setup)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/101466133_comp3123_labtest2.git
+   cd 101466133_comp3123_labtest2
+   ```
+2. Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Configure API key:
 
-### Code Splitting
+* Open `src/config.js`.
+* Set `OPEN_WEATHER_API_KEY` to your OpenWeatherMap API key.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Run the app:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The app will open at `http://localhost:3000`
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* **Main screen – default city (Toronto)![Main screen](./screenshots/Toronto.jpg)**
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+* **Search result – Vancouver![Search Result](./screenshots/vancouver.jpg)**
